@@ -1,0 +1,26 @@
+script(type="text/x-template")#skills-list
+    .skills__wrapp
+        ul.skills
+            //- skill из цикла и skill с ключом - ОДНО И ТОЖЕ
+            li.skills-row(v-for="skill in skills" :key="skill.title")
+                skills_main(:skills="skill")
+
+script(type="text/x-template")#skills-main
+    .skills-main
+        //- пропс :skills, пропс в js и объект в заголовке - одно и тоже
+        h3.skills-title {{skills.title}}
+        ul.skills-list
+            //- skills из цикла это тот же skills из верхнего цикла
+            li.skills-item(v-for="(skillNumber, skillName) in skills.skills")
+                skill(:skillName="skillName" :skillNumber="skillNumber")
+
+script(type="text/x-template")#skill
+    .skills-svg
+        svg(viewBox=" 0 0 200 200" preserveAspectRatio="none")
+            linearGradient(id="gradient" x1="0" y1="0" x2="100%" y2="0")
+                stop(offset="0%" stop-color="#ed7f00")
+                stop(offset="100%" stop-color="#ffb400")
+            //- во втором круге ставится ref(как объект data), чтобы можно было к нему обращаться в js
+            circle(cx="90" cy="90" r="65").skill-circle
+            circle(cx="90" cy="90" r="65" ref="gradient").skill-gradient
+        .skills-name {{skillName}}

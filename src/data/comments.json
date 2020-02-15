@@ -1,0 +1,38 @@
+[
+    {
+        "text":"1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "img":"dima.png",
+        "name": "Дмитрий Ковальчук",
+        "status": "Основатель"
+    },
+    {
+        "text":"2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "img":"vladimir.png",
+        "name": "Владимир Сабанцев",
+        "status": "Преподаватель"
+    },
+    {
+        "text":"3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "img":"dima.png",
+        "name": "Дмитрий Ковальчук",
+        "status": "Основатель"
+    },
+    {
+        "text":"4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "img":"vladimir.png",
+        "name": "Владимир Сабанцев",
+        "status": "Преподаватель"
+    },
+    {
+        "text":"5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "img":"dima.png",
+        "name": "Дмитрий Ковальчук",
+        "status": "Основатель"
+    },
+    {
+        "text":"6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "img":"vladimir.png",
+        "name": "Владимир Сабанцев",
+        "status": "Преподаватель"
+    }
+]

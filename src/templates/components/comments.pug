@@ -1,0 +1,28 @@
+script(type="text/x-template")#comments-wrapp
+    .comments__wrapp.container
+        .comments__title
+            h2.comments__h2 Что обо мне говорят
+            btns(@slide="commentsSlider")
+        .comments__slider
+            slider(:comments="comments")
+
+script(type="text/x-template")#comments__btns
+    .comments__btns
+        button(@click.prevent="$emit('slide','prev')")
+            +icon('arrow-down', 'arrow-left')
+        button(@click.prevent="$emit('slide','next')").btn-right
+            +icon('arrow-down', 'arrow-right')
+
+script(type="text/x-template")#comments__slider
+    ul.comments__list(data-current="0")
+        li.comments__item(v-for="comment in comments" :key="comment.id" ref="comments__item")
+            .comments__quote
+                +icon('quote','quote')
+            .comments__content
+                .comments__text {{comment.text}}
+                .comments__persone
+                    .comments__img
+                        img(:src="comment.img" alt="комментатор").persone
+                    .comments__info
+                        .comments__name {{comment.name}}
+                        .comments__status {{comment.status}}

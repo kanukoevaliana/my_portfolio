@@ -1,0 +1,33 @@
+.footer__links{
+    max-width: 40%;
+    .links{
+        display: flex;
+        margin-top: 10%;
+        :nth-child(1){
+            margin-left: -5%;
+        }
+    }
+    .links__li{
+        margin-left: 5%;
+    }
+    .links__a{
+        padding: 12.5px;
+        border: 1px solid #5d5f60;
+        border-radius: 50%;
+        .icon{
+            vertical-align: middle;
+        }
+        &:hover{
+            .link{
+                fill:#ccc;
+            }
+            border: 1px solid #ccc;
+        }
+        &:active{
+            .link{
+                fill:#fff;
+            }
+            border: 1px solid #fff;
+        }
+    }
+}

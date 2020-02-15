@@ -1,0 +1,55 @@
+script(type="text/x-template")#works-content
+    .works__content
+        works__left(
+            :works="works"
+            :currentWork="currentWork"
+            @slide = "worksSlider"
+            )
+        works__right(
+            :currentWork="currentWork"
+        )
+
+script(type="text/x-template")#works__left
+    .works__left
+        .works__images
+            img(:src="currentWork.img" alt="картинка сайта").works__now
+            .works__slider
+                slider(:works="works"
+                :currentWork="currentWork"
+                )
+                arrows(@slide="direction => $emit('slide', direction)")
+        .works__number {{currentWork.n}}
+
+script(type="text/x-template")#works__slider
+    ul.works__list
+        li.works__item(
+            v-for="work in works" :key="work.n"
+            :class="{active: currentWork.n == work.n}"
+            )
+            a(:href="work.link")
+                img(:src="work.img" alt="картинка сайта").works__img
+
+script(type="text/x-template")#works__arrows
+    .works__arrows
+        button(@click.prevent="$emit('slide','next')")
+            +icon('arrow-down',' arrow right')
+        button(@click.prevent="$emit('slide','prev')")
+            +icon('arrow-down','arrow left')
+
+script(type="text/x-template")#works__right
+    .works__right
+        lang(
+            :langArray="langArray"
+        )
+        .works__h3 {{currentWork.title}}
+        .works__text
+            p {{currentWork.text}}
+        .works__link
+            a(:href="currentWork.link")
+                +icon("link","works__icon")
+                p Посмотреть сайт
+
+script(type="text/x-template")#works__lang
+    .works__langlist
+        .works__lang(v-for="tag in langArray")
+            .works__word {{tag}}
