@@ -1,0 +1,42 @@
+[
+    {
+        "n":"1",
+        "img":"fitnes.JPG",
+        "words":["html","css"],
+        "title": "Afrodita",
+        "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "link":"https://github.com/kanukoevaliana/fitnes.git"
+    },
+    {
+        "n":"2",
+        "img":"burgers.JPG",
+        "words":["html","css","js","jquery"],
+        "title": "Mr. burger",
+        "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "link":"https://kanukoevaliana.github.io/mr_burger/"
+    },
+    {
+        "n":"3",
+        "img":"test.JPG",
+        "words":["html","css"],
+        "title": "test",
+        "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "link":"https://kanukoevaliana.github.io/test/"
+    },
+    {
+        "n":"4",
+        "img":"finist.JPG",
+        "words":["html","css","jquery"],
+        "title": "finist",
+        "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "link":"https://kanukoevaliana.github.io/finist_layout/"
+    },
+    {
+        "n":"5",
+        "img":"portfolio.JPG",
+        "words":["html","css","js","vue"],
+        "title": "portfolio",
+        "text":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ut necessitatibus. Nihil doloribus porro dolores sequi tenetur, quos delectus, inventore autem, maiores nulla quo! Repudiandae ea illo ab omnis rerum.",
+        "link":"#"
+    }
+]

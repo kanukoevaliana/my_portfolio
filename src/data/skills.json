@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Frontend",
+        "skills":{
+            "HTML" : 80,
+            "CSS" : 80,
+            "Javascript": 30,
+            "jQuery/Vue.js" : 20
+        }
+    },
+    {
+        "title": "Workflow",
+        "skills":{
+            "GIT" : 40,
+            "Terminal" : 30,
+            "Gulp" : 10,
+            "Webpack": 15
+        }
+    },
+    {
+        "title": "Backend",
+        "skills":{
+            "Node.js" : 20,
+            "PHP" : 30,
+            "Django" : 40,
+            "Flask": 15
+        }
+    }
+]

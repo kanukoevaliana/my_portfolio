@@ -1,0 +1,24 @@
+.scroll{
+    display: flex;
+    margin: 0 auto;
+    z-index: 4;
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+        color: #969490;
+        cursor: pointer;
+        .scroll__link{
+            fill: #969490;
+        }
+    }
+    &:active{
+        cursor: pointer;
+        color: #ccc;
+        .scroll__link{
+            fill: #ccc;
+        }
+    }
+}
+.scroll__link{
+    fill: #fff;
+}

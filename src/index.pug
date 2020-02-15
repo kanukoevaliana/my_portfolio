@@ -1,7 +1,7 @@
 include ./mixins.pug
 
 <!DOCTYPE html>
-html(lang="en")
+html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -10,6 +10,115 @@ html(lang="en")
   body
     .wrapper
       .maincontent
-        +image('content/user.jpg', 'user-pic')
-        +icon('link', 'link-class')
-        .icon-bg
+        section.hero#hero
+          .parallax.mod-1
+            img(src=require(`images/content/prlx1.png`) alt="слой параллакса" role="presentaition")
+          .parallax.mod-2
+            img(src=require(`images/content/prlx2.png`) alt="слой параллакса" role="presentaition")
+          .parallax.mod-3
+            img(src=require(`images/content/prlx3.png`) alt="слой параллакса" role="presentaition")
+          .parallax.mod-4
+            img(src=require(`images/content/prlx4.png`) alt="слой параллакса" role="presentaition")
+          .parallax.mod-5
+            img(src=require(`images/content/prlx5.png`) alt="слой параллакса" role="presentaition")
+          .herocontent.container
+            header.header
+              .header__logo
+                .logo ЛК
+              .header__menu.menu
+                +nav()
+              .header__links.links
+                +links()
+            .content
+              .content__wrapper
+                .content__left
+                  h2.content__office Личный кабинет
+                  h2.content__office web-разработчика
+                .content__right
+                  h2.content__name Лиана
+                  h2.content__name Канукоева
+            a(href="#about").scroll 
+              p Скролл
+              +icon("scroll","scroll__link link")
+        section.about#about
+          .about__wrapp
+            .about__content.container
+              .about__left
+                .about__photo
+                  +image('content/user.jpg', about__user, 'фото разработчика')
+                .about__data
+                  table
+                    tr
+                      th Проживаю:
+                      td Мытищи
+                    tr
+                      th Возраст:
+                      td 19 лет
+                    tr
+                      th Родился:
+                      td 13 августа 2000
+              .about__right
+                .about__info
+                  p Привет, меня зовут
+                  h2 Лиана Канукоева
+                  .about__p
+                    p Я занимаюсь разработкой современных сайтов и приложений.
+                    p Мне нравится делать интересные и современные проекты.
+                .about__text
+                  +icon("asterisk","about__asterisk")
+                  p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво!
+        section.userful#userful
+          .userful__wrapp.container
+            .userful__text
+              h2.userful__h2 Чем я могу быть вам полезен
+              p.userful__p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво!
+            #skills-component
+          .userful__hands
+            +image('content/hand.png', hand, 'руки')
+        section.works#works
+          .works__wrapp.container
+            h2.works__title Мои работы
+            #works-component
+        .join-sections
+          +image('content/leaves.png', 'join__leaves', 'листья')
+          section.comments#comments-section
+            #comments
+          section.contancts#contacts
+            .contacts__wrapp.container
+              h2.contacts__title Связаться со мной
+              form.contacts__form(id="form" action="form.php" method="POST")
+                .contacts__first
+                  .contacts__block
+                    label(for="#name") Введите ваше имя
+                    .contacts__input
+                      +icon('user', 'icon')
+                      input#name(type="text" name="name" placeholder="Введите ваше имя")
+                  .contacts__block
+                    label(for="#email") Введите ваш email
+                    .contacts__input
+                      +icon('envelope', 'icon')
+                      input#email(type="e-mail" name="email" placeholder="Введите ваш email")
+                .contacts__text
+                  label(for="#text") Сообщение к письму
+                  .contacts__input
+                    +icon('message', 'icon')
+                    input#text(type="text" name="message" placeholder="Введите текст")
+                button.contacts__button(@click.prevent="formSubmit" type="submit") отправить
+        footer.footer#footer
+          .footer__wrapp.container
+            .footer__left
+              .footer__year &copy 2020
+              .footer__name Лиана Канукоева
+              .footer__position Личный сайт веб-разработчика
+            .footer__right
+              .footer__menu.menu
+                +nav()
+              .footer__text
+                .footer__links
+                  p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool
+                  .links
+                    +links()
+                .footer__quote
+                  p Всегда пиши код так, будто его будет сопровождать склонный к насилию психопат, который знает, где вы живете
+                  p.footer__person Martin Golding
+    include ./templates/entry.pug
