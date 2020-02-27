@@ -1,3 +1,13 @@
 .works__right{
     margin-left: 23%;
+    @include tablets{
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
+        margin-top: 10%;
+    }
+    @include phones{
+        text-align: left;
+        width: 90%;
+    }
 }

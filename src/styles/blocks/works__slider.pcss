@@ -3,12 +3,20 @@
     justify-content: flex-end;
     margin-top: -130px;
     position: relative;
-    
+    @include phones{
+        width: 100%;
+        position: absolute;
+    }
 }
 .works__list{
     display: flex;
     max-width: 690px;
     overflow: hidden;
+    @include phones{
+        width: 0%;
+        height: 0%;
+        display: none;
+    }
 }
 .active{
     border: 1.5px solid orange;

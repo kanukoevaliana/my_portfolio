@@ -1,4 +1,17 @@
 .userful__hands{
     position: absolute;
     bottom: -8%;
+    @include tablets{
+        display: none;
+    }
+}
+.userful__handstabl{
+    display: none;
+    @include tablets{
+        display: block;
+        width: 100%;
+        img{
+            margin: 0 auto;
+        }
+    }
 }

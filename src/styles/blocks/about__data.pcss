@@ -1,11 +1,17 @@
 .about__data{
     margin-top: 50px;
+    table{
+        margin: 0 auto;
+    }
     tr{
         line-height: 2;
         text-align: left;
     }
     th{
         width: 60%;
+        @include tablets{
+            width: 55%;
+        }
     }
     td{
         color: #fff;

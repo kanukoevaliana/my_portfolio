@@ -1,0 +1,34 @@
+.menu-widget{
+    position: absolute;
+    display: none;
+    background-color: #1b1f22;
+    z-index: 10;
+    width: 0;
+    height: 0;
+    padding: 5%;
+}
+.menu-widget__close{
+    position: relative;
+    float: right;
+}
+.menu-widget__wrapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+}
+.menu-widget__nav{
+    font-size: 24px;
+    line-height: 2;
+}
+.menu-widget__social{
+    @include tablets{
+        display: none;
+    }
+    @include phones{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+}

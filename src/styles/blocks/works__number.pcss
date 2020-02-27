@@ -6,4 +6,11 @@
     color: #f0f0f0;
     font-weight: 900;
     font-size: 300px;
+    @include tablets{
+        font-size: 320px;
+        top: -20%;
+    }
+    @include phones{
+        display: none;
+    }
 }

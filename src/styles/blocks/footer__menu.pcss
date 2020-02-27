@@ -1,11 +1,21 @@
 .footer__menu{
     .menu__ul{
         display: flex;
+        @include tablets{
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
         :nth-child(1){
             margin-left: 0;
+            @include phones{
+                padding: 5% 0;
+            }
         }
     }
     .menu__li{
-        margin-left: 8%;
+        margin-right: 8%;
+        @include phones{
+            padding: 5% 0;
+        }
     }
 }

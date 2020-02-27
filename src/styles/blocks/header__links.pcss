@@ -1,4 +1,28 @@
 .header__links{
     display: flex;
     justify-content: space-around;
+    margin-left: 50px;
+    @include tablets{
+        margin-left: 0;
+    }
+    .links{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 50px;
+        @include tablets{
+            width: 50%;
+        }
+    }
+    .header__wrapp{
+        cursor: pointer;
+        display: none;
+        @include tablets{
+            margin-left: 10%;
+            display: block;
+            .menu{
+                fill: #fff;
+            }
+        }
+    }
 }

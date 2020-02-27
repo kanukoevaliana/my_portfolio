@@ -1,4 +1,11 @@
 .about__content{
     padding: 15%;
     display: flex;
+    @include tablets{
+        padding: 16% 3%;
+    }
+    @include phones{
+        flex-direction: column;
+        margin: 0;
+    }
 }

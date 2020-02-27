@@ -1,6 +1,14 @@
 .works__left{
     position: relative;
+    display: flex;
+    @include tablets{
+        width: 90%;
+    }
 }
 .works__images{
     position: absolute;
+    @include tablets{
+        position: relative;
+        width: 100%;
+    }
 }

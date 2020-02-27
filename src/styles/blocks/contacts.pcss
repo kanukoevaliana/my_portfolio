@@ -1,6 +1,14 @@
+.contacts__wrapp{
+    @include tablets{
+        padding: 25% 0 10% 0;
+    }
+}
 .contacts__form{
     width: 70%;
     padding: 5% 0 5% 0;
+    @include tablets{
+        width: 100%;
+    }
     label{
         color: #7e7e7f;
         font-weight: 600;

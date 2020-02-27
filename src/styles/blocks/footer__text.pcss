@@ -1,8 +1,20 @@
 .footer__text{
     display: flex;
     margin-top: 5%;
+    @include tablets{
+        flex-direction: column;
+    }
 }
 .footer__quote{
     margin-left: 5%;
     width: 40%;
+    @include tablets{
+        margin-left: 0;
+        width: 80%;
+    }
+    p{
+        @include phones{
+            line-height: 1.8;
+        }
+    }
 }

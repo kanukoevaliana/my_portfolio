@@ -1,3 +1,10 @@
 .content__wrapper{
     display: flex;
+    @include tablets{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.content__left{
+    margin-top: 2%;
 }
