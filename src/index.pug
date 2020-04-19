@@ -86,7 +86,7 @@ html(lang="ru")
             #skills-component
           .userful__hands
             +image('content/hand.png', hand, 'руки')
-          .userful__handstablz
+          .userful__handstabl
             +image('content/handstabl.png', hand__tabl, 'руки')
         section.works#works
           .works__wrapp.container
@@ -102,12 +102,12 @@ html(lang="ru")
               form.contacts__form(id="form" action="form.php" method="POST")
                 .contacts__first
                   .contacts__block
-                    label(for="#name") Введите ваше имя
+                    label(for="#name") Ваше имя
                     .contacts__input
                       +icon('user', 'icon')
                       input#name(type="text" name="name" placeholder="Введите ваше имя")
                   .contacts__block
-                    label(for="#email") Введите ваш email
+                    label(for="#email") Ваш email
                     .contacts__input
                       +icon('envelope', 'icon')
                       input#email(type="e-mail" name="email" placeholder="Введите ваш email")
